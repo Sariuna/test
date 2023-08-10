@@ -15,14 +15,14 @@ if (formContent) {
     button.classList.remove('active')
   }
 
-  const buttonOff = () => {
+  const hideButton = () => {
     button.classList.remove('active')
   }
 
   button.addEventListener('click', buttonHandler)
 
 
-  inputs.forEach((input) => input.addEventListener('click', inputChangeHandler, setInterval(buttonOff, 4000)))
+  inputs.forEach((input) => input.addEventListener('click', inputChangeHandler)
 }
 
 
